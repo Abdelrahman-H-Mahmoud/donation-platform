@@ -6,7 +6,7 @@ routes.get('/', async (req, res, next) => {
         const { skip, limit, ...query } = req.query;
 
         const { contents } = await contentService.getAll(query, +skip, +limit);
-        res.send(contents);
+        res.send({payload:contents});
         next();
     } catch (error) {
         console.log(error);

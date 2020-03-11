@@ -14,7 +14,7 @@ module.exports = {
 }
 
 
-const contents = [...Array(1)].map((value,idx) => (
+const contents = [...Array(100)].map((value,idx) => (
     {
         title: 'content'+idx,
         description: 'describtion' + idx,
