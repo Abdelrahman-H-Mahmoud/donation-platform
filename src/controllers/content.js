@@ -5,10 +5,11 @@ routes.get('/', async (req, res, next) => {
     try {
         const { skip, limit, ...query } = req.query;
 
-        const { contents } = await contentService.getAll(query, skip, limit);
+        const { contents } = await contentService.getAll(query, +skip, +limit);
         res.send(contents);
         next();
     } catch (error) {
+        console.log(error);
         next(error);
     }
 
@@ -16,7 +17,7 @@ routes.get('/', async (req, res, next) => {
 
 
 routes.use((err, req, res, next) => {
-    res.send({ message: 'internal server error', code: 500 });
+    res.send({ message: 'internal server error', code: 500, error: err });
     next();
 });
 

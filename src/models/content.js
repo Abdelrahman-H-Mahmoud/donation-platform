@@ -15,5 +15,5 @@ const ContentSchema = new Schema({
 
 ContentSchema.index({ title: "text" });
 
-module.exports = mongoose.model("Contents", ContentSchema);
+module.exports = mongoose.model("Contents", ContentSchema,"contents");
 

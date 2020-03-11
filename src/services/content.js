@@ -1,9 +1,13 @@
 const contentRepo = require('../repos/content');
-exports = {
-    async getAll(query, skip, limit) {
 
-        const contents = await contentRepo.find(query, skip, limit);
+async function getAll(query, skip, limit) {
 
-        return { contents };
-    }
+    const contents = await contentRepo.find(query, skip, limit);
+
+    return { contents };
 }
+
+module.exports={
+    getAll
+}
+
