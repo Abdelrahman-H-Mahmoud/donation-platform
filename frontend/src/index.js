@@ -6,7 +6,7 @@ import axios from 'axios';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css'
 
-axios.defaults.baseURL = process.env.REACT_APP_endpoint || 'http://localhost:3001/api';
+axios.defaults.baseURL = 'http://localhost:3001/api';
 
 console.log('process.env.REACT_APP_endpoint :', process.env.REACT_APP_endpoint);
 
