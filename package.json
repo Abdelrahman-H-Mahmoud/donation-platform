@@ -1,0 +1,23 @@
+{
+  "name": "please-donate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "server":"cd ./server && npm start",
+    "client":"cd ./frontend && npm start",
+    "start": "npm run server && npm run client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdo38013/donation-platform.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abdo38013/donation-platform/issues"
+  },
+  "homepage": "https://github.com/abdo38013/donation-platform#readme"
+}
