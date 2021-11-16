@@ -11,7 +11,7 @@
   "author": "Vodafone Developers",
   "license": "ISC",
   "dependencies": {
-    "aws-sdk": "^2.637.0",
+    "aws-sdk": "^2.814.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongoose": "^5.9.4"
